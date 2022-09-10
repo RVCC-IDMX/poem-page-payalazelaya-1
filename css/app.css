@@ -73,3 +73,44 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Styling and Typography for Poem */
+
+h1,
+h3,
+h4 {
+  color: #093912;
+}
+
+body {
+  font-size: clamp(1.5rem, 0.5rem + 0.5vw, 1rem);
+  width: min(90vw, 600px);
+  padding: max(0.5vh, 0.5rem);
+  font-family: 'Dosis';
+  color: black;
+  background-color: darkseagreen;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 8px double #238335;
+}
+
+.fadein img {
+  opacity: 0.5;
+  transition: 1s ease;
+}
+
+.fadein img:hover {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+:root {
+  --flow-space: 0.5rem;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
